@@ -1,9 +1,11 @@
 import React from "react";
-import lastImg from "../../../assets/Group_last.png"
 function FinalAttempt() {
   return (
-    <div className="container-fluid">
-      <div className="row py-3 " style={{ backgroundColor: "#EBF7FF" }}>
+    <div
+      className="container-fluid pb-5 finalAttemptBackground"
+      style={{ backgroundColor: "#EBF7FF" }}
+    >
+      <div className="row py-3 ">
         <div className="col-12 d-flex justify-content-center align-items-center">
           <div className="text-center mt-5">
             <h2 className="fw-bold" style={{ color: "#0f3287" }}>
@@ -29,9 +31,6 @@ function FinalAttempt() {
             </div>
           </div>
         </div>
-          <div className="ps-0" >
-            <img src={lastImg   } alt="..." className="img-fluid" />
-          </div>
       </div>
     </div>
   );

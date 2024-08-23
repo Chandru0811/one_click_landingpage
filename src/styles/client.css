@@ -362,3 +362,9 @@ body {
   font-size: 32px;
   font-weight: bold;
 }
+
+.finalAttemptBackground{
+  background-image: url('../assets/Group_last.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}

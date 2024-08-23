@@ -9,7 +9,6 @@ import key from "../../../assets/Icon.png";
 import clock from "../../../assets/Icon2.png";
 import Monitor from "../../../assets/Icon3.png";
 import ContainerBg1 from "../../../assets/Rectangle 35.png";
-import ContainerBg3 from "../../../assets/Illustrationbg.png";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
