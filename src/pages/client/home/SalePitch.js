@@ -1,6 +1,5 @@
 import React from "react";
 import bgImg from "../../../assets/Rectangle 37.png";
-import formImg from "../../../assets/Illustration1.png";
 import formBgImg from "../../../assets/Orange Cream Modern Cargo Services Instagram Story (1) 1.png";
 import ContainerImg1 from "../../../assets/Illustration.png";
 import ContainerImg2 from "../../../assets/Illustration2.png";
@@ -65,12 +64,17 @@ function SalePitch() {
             <img src={formBgImg} className="img-fluid" alt="Background" />
           </div>
 
-          <div className="col-12 col-md-6 d-flex justify-content-center flex-column align-items-center mb-4 mb-md-0">
-            <img
-              src={formImg}
-              className="img-fluid form-img"
-              alt="..."
-            />
+          <div className="col-12 col-md-6 mb-4 mb-md-0 d-flex align-items-center justify-content-center">
+            <iframe
+              width="80%"
+              height="315"
+              src="https://www.youtube.com/embed/fq1ceqOU2x4?si=f6J_14FGclt0Y9RM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
 
           <div className="col-12 col-md-6 d-flex flex-column align-items-center">
@@ -267,7 +271,6 @@ function SalePitch() {
           </div>
         </div>
       </div>
-      
     </div>
   );
 }

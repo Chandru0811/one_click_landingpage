@@ -12,7 +12,17 @@ function Header() {
   const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
   return (
     <>
-      <Navbar key={expand} expand={expand} className="shadow bg-light position-sticky" style={{top:"0",zIndex:"9999"}}>
+      <Navbar
+        key={expand}
+        expand={expand}
+        className="shadow  position-sticky"
+        style={{
+          top: "0",
+          zIndex: "9999",
+          backgroundColor: "rgba(255, 255, 255, 0.5)",
+          backdropFilter: "blur(10px)", 
+        }}
+      >
         <Container fluid>
           <Navbar.Brand as={NavLink} to={"/"} className="headerNav me-0">
             <img src={logo} alt="logo...." className="img-fluid " />
@@ -48,12 +58,31 @@ function Header() {
                   isOffcanvasOpen ? "ps-2 no-gap" : "ms-lg-5 mt-2 gap-4"
                 }`}
               >
-                <Nav.Link as={NavLink} to={"/"} className={isOffcanvasOpen ?"ps-2 mb-1":""}>
+                <Nav.Link
+                  as={NavLink}
+                  to={"/"}
+                  className={isOffcanvasOpen ? "ps-2 mb-1" : ""}
+                >
                   One Click Social Media Posting
                 </Nav.Link>
-                <Nav.Link href="#action2" className={isOffcanvasOpen ?"ps-2 mb-1":""}>SEO Services</Nav.Link>
-                <Nav.Link href="#action3" className={isOffcanvasOpen ?"ps-2 mb-1":""}>Social Media Marketing</Nav.Link>
-                <Nav.Link href="#action4" className={isOffcanvasOpen ?"ps-2 mb-1":""}>CRM</Nav.Link>
+                <Nav.Link
+                  href="#action2"
+                  className={isOffcanvasOpen ? "ps-2 mb-1" : ""}
+                >
+                  SEO Services
+                </Nav.Link>
+                <Nav.Link
+                  href="#action3"
+                  className={isOffcanvasOpen ? "ps-2 mb-1" : ""}
+                >
+                  Social Media Marketing
+                </Nav.Link>
+                <Nav.Link
+                  href="#action4"
+                  className={isOffcanvasOpen ? "ps-2 mb-1" : ""}
+                >
+                  CRM
+                </Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
