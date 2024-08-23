@@ -19,13 +19,15 @@ function Client({
   return (
     <div>
       <div>
-        <BrowserRouter>
+        <BrowserRouter basename="/landing_page">
           <LeadMagnetPopup />
           <Success />
           <Error />
           <Header />
           <button className="stickySideButton">Contact Us</button>
-          <button className="whatsappStickySideButton"><BsWhatsapp /></button>
+          <button className="whatsappStickySideButton">
+            <BsWhatsapp />
+          </button>
           <Routes>
             <Route path="/" element={<Home handleLogin={handleLogin} />} />
           </Routes>

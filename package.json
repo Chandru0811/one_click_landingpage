@@ -1,5 +1,6 @@
 {
   "name": "one_click_landingpage",
+  "homepage": "/landing_page",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
