@@ -4,6 +4,9 @@ import Home from "../pages/client/Home";
 import "../styles/client.css";
 import Header from "../components/client/Header";
 import Footer from "../components/client/Footer";
+import LeadMagnetPopup from "../pages/client/LeadMagnetPopup";
+import Success from "../pages/client/Success";
+import Error from "../pages/client/Error";
 
 function Client({
   handleLogout,
@@ -15,6 +18,9 @@ function Client({
     <div>
       <div>
         <BrowserRouter>
+          <LeadMagnetPopup />
+          <Success />
+          <Error />
           <Header />
           <Routes>
             <Route path="/" element={<Home handleLogin={handleLogin} />} />
