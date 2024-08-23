@@ -93,7 +93,7 @@ function SalePitch() {
                   <input
                     type="text"
                     name="name"
-                    placeholder="Name"
+                    placeholder="Name *"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.name}
@@ -114,7 +114,7 @@ function SalePitch() {
                   <input
                     type="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder="Email *"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.email}
@@ -135,7 +135,7 @@ function SalePitch() {
                   <input
                     type="text"
                     name="mobile"
-                    placeholder="Mobile"
+                    placeholder="Mobile *"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.mobile}
