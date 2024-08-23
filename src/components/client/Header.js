@@ -14,9 +14,9 @@ function Header() {
   const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
   return (
     <>
-      <Navbar key={expand} expand={expand} className="shadow-sm bg-light">
+      <Navbar key={expand} expand={expand} className="shadow bg-light position-sticky" style={{top:"0",zIndex:"9999"}}>
         <Container fluid>
-          <Navbar.Brand as={NavLink} to={""} className="headerNav me-0">
+          <Navbar.Brand as={NavLink} to={"/"} className="headerNav me-0">
             <img src={logo} alt="logo...." className="img-fluid " />
           </Navbar.Brand>
 
@@ -50,7 +50,7 @@ function Header() {
                   isOffcanvasOpen ? "ps-2 no-gap" : "ms-lg-5 mt-2 gap-4"
                 }`}
               >
-                <Nav.Link href="#action1" className={isOffcanvasOpen ?"ps-2 mb-1":""}>
+                <Nav.Link as={NavLink} to={"/"} className={isOffcanvasOpen ?"ps-2 mb-1":""}>
                   One Click Social Media Posting
                 </Nav.Link>
                 <Nav.Link href="#action2" className={isOffcanvasOpen ?"ps-2 mb-1":""}>SEO Services</Nav.Link>
