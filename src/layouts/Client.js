@@ -4,6 +4,7 @@ import Home from "../pages/client/Home";
 import "../styles/client.css";
 import Header from "../components/client/Header";
 import Footer from "../components/client/Footer";
+
 function Client({
   handleLogout,
   handleLogin,
