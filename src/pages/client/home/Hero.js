@@ -12,7 +12,7 @@ function Hero() {
               Digital Marketing Services in Singapore
             </h1>
             <h1 className="oneClick">
-              One Click!
+              One Click
               <span className="imageText">
                 <img
                   className="img-fluid"

@@ -187,39 +187,11 @@ body {
   width: 130px;
 }
 
-/* Footer */
+/* / Footer / */
 .footerBg {
   background: linear-gradient(90deg, #1a4ed5 0%, #1c2792 100%);
   color: var(--client-text-color);
-}
-
-.mediaIconBg {
-  background-color: var(--client-iconbg-color);
-  border-radius: 10px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-}
-
-.mediaIconBg1 {
-  background-color: var(--client-iconbg-color);
-  border-radius: 5px;
-  padding: 5px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  width: 24px;
-  height: 24px;
-  line-height: 0;
-}
-
-/* Footer */
-.footerBg {
-  background: linear-gradient(90deg, #1a4ed5 0%, #1c2792 100%);
-  color: var(--client-text-color);
+  padding: 20px 0;
 }
 
 .mediaIconBg {
@@ -256,8 +228,137 @@ body {
   margin: 0;
 }
 
-.footerText{
+.footerText {
   color: #0097FE;
 }
 
-/* Footer */
+/* / Media Queries for Responsiveness / */
+@media (max-width: 768px) {
+  .mediaIconBg, .mediaIconBg1 {
+    padding: 8px;
+    font-size: 1.3rem;
+  }
+
+  .footerBg p {
+    font-size: 0.85rem;
+  }
+
+  .footer-copyright {
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .mediaIconBg, .mediaIconBg1 {
+    padding: 6px;
+    font-size: 1rem;
+  }
+
+  .footerBg h2 {
+    font-size: 1.5rem;
+  }
+
+  .footerBg h5 {
+    font-size: 1.2rem;
+  }
+
+  .footerBg p {
+    font-size: 0.8rem;
+  }
+
+  .footerBg h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.8rem;
+  }
+}
+
+/* Lead Magnet  */
+
+.modelContent .modal-content {
+  border-radius: 0px !important;
+}
+
+.modelContent .modal-header {
+  border-bottom: 0px !important;
+}
+
+.leadMagnetHeading {
+  color: #1e255e;
+  font-size: 34px;
+}
+
+.leadMagnetSubHeading {
+  color: #0061fe;
+  font-weight: 600 !important;
+}
+
+.leadMagnetParagraph {
+  color: rgb(121, 121, 121);
+  font-size: small;
+  font-weight: 400 !important;
+}
+
+.leadMagenetLable {
+  color: #252525;
+  font-weight: 600 !important;
+}
+
+.leadMagenetInput {
+  border-radius: 0px;
+  padding: 10px;
+  border: 1px solid #1e255e;
+  background-color: #0061fe0e;
+}
+
+.leadMagnetButton {
+  width: 100%;
+  border-radius: 0px;
+  padding: 10px;
+  background-color: #0061fe;
+}
+
+.successHeading {
+  color: #fff;
+  background-color: rgb(0, 184, 0);
+  border-radius: 0px;
+}
+
+.SuccessMagnetSubHeading {
+  color: #252525;
+  font-weight: 600 !important;
+}
+
+.errorMagnetButton {
+  border-radius: 0px;
+  padding: 10px 20px;
+  background-color: rgb(192, 0, 0);
+  border-radius: 50px !important;
+}
+
+.errorHeading {
+  color: #fff;
+  background-color: rgb(192, 0, 0);
+  border-radius: 0px;
+}
+
+.errorMagnetSubHeading {
+  color: #252525;
+  font-weight: 600 !important;
+}
+
+.errorMagnetButton {
+  border-radius: 0px;
+  padding: 10px 20px;
+  background-color: rgb(192, 0, 0);
+  border-radius: 50px !important;
+}
+
+.errorMobile {
+  font-size: 32px;
+  font-weight: bold;
+}
