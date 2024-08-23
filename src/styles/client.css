@@ -6,10 +6,55 @@
 }
 
 :root {
-  --admin-primary-color: #fff8e9;
-  --admin-secondary-color: #8b714a;
-  --admin-teritary-color: #d7ac6c;
-  --admin-accent-color: #000;
-  --admin-background-color: #ad8c5c;
-  --admin-text-color: #fff;
+  --client-primary-color: #fff8e9;
+  --client-secondary-color: #8b714a;
+  --client-teritary-color: #d7ac6c;
+  --client-accent-color: #000;
+  --client-background-color: #ad8c5c;
+  --client-text-color: #fff;
+
+}
+
+/* header */
+.headerNavLink.navbar-nav .nav-link{
+  color: #000;
+}
+.headerNavLink.navbar-nav .nav-link:hover{
+color: #fff8e9;
+/* background-color: #1A4ED5; figma clr*/
+background-color: #2c6bff;
+border-radius: 5px;
+}
+.headerNavLink.navbar-nav a.nav-link.active{
+  color: #fff8e9;
+/* background-color: #1A4ED5; figma clr*/
+border-radius: 5px;
+background-color: #2c6bff;
+}
+.navbar .btn-outline-success{
+color: #fff8e9;
+/* background-color: #25D366;   FIGMA CLR */
+background-color: #00d570;
+border: none;
+padding: 10px 20px;
+border-radius: 1.2rem;
+}
+@media (max-width: 411px) {
+  .navbar-toggler {
+    margin-right: auto;
+    margin-top: 7px;
+    padding: 0.25rem 0.5rem; 
+    font-size: 0.875rem; 
+  }
+
+  .navbar .btn-outline-success {
+    margin-top: 7px;
+    margin-left: 0.5rem;
+    padding: 0.25rem 0.5rem; 
+    font-size: 0.875rem; 
+  }
+
+  .navbar .img-fluid {
+    max-height: 1.77rem; 
+  }
 }
