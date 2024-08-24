@@ -18,20 +18,31 @@ function Header() {
         className="shadow position-sticky"
         style={{
           top: "0",
-          zIndex: isOffcanvasOpen?"999":"9999",
+          zIndex: "999",
           backgroundColor: "rgba(255, 255, 255, 0.5)",
           backdropFilter: "blur(10px)",
         }}
       >
         <Container fluid>
           <Navbar.Brand as={NavLink} to={"/"} className="headerNav me-0">
-            <img src={logo} alt="logo...." className="img-fluid " />
+            <img
+              src={logo}
+              alt="logo...."
+              className="img-fluid "
+              style={{ maxWidth: "180px" }}
+            />
           </Navbar.Brand>
 
           <div className="d-flex align-items-center ms-auto order-2 order-md-3 ">
-            <Button variant="outline-success " className="text-nowrap">
-              Call Us
-            </Button>
+            <a
+              className=""
+              style={{ textDecoration: "none", color: "black" }}
+              href="tel:65 889 1306"
+            >
+              <Button variant="outline-success " className="text-nowrap">
+                Call Us
+              </Button>
+            </a>
             <Navbar.Toggle
               aria-controls={`offcanvasNavbar-expand-${expand}`}
               className="ms-2 px-2"
@@ -58,31 +69,42 @@ function Header() {
                 }`}
               >
                 <Nav.Link
-                  as={NavLink}
-                  to={"/"}
+                  href="#Hero"
                   className={`${isOffcanvasOpen ? "ps-2 mb-1" : "text-nowrap"}`}
                 >
                   One Click Social Media Posting
                 </Nav.Link>
                 <Nav.Link
-                  // href="#action2"
+                  href="#Promo1"
                   className={`${isOffcanvasOpen ? "ps-2 mb-1" : "text-nowrap"}`}
                 >
                   SEO Services
                 </Nav.Link>
                 <Nav.Link
-                  // href="#action3"
+                  href="#Promo2"
                   className={isOffcanvasOpen ? "ps-2 mb-1" : "text-nowrap"}
                 >
                   Social Media Marketing
                 </Nav.Link>
                 <Nav.Link
-                  // href="#action4"
+                  href="#Promo3"
                   className={isOffcanvasOpen ? "ps-2 mb-1" : "text-nowrap"}
                 >
                   CRM
                 </Nav.Link>
-                {isOffcanvasOpen ? "" : <div className="ms-auto mt-2 text-end text-nowrap contactNum cursor"><span className="">+65 889 1306</span></div>}
+                {isOffcanvasOpen ? (
+                  ""
+                ) : (
+                  <div className="ms-auto mt-2 text-end text-nowrap contactNum cursor">
+                    <a
+                      className="fw-semibold"
+                      style={{ textDecoration: "none", color: "black" }}
+                      href="tel:65 889 1306"
+                    >
+                      +65 889 1306
+                    </a>
+                  </div>
+                )}
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

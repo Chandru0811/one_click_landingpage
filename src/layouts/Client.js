@@ -9,6 +9,7 @@ import Success from "../pages/client/Success";
 import Error from "../pages/client/Error";
 import { BsWhatsapp } from "react-icons/bs";
 import ContactUs from "../pages/client/ContactUs";
+import ScrollToTop from "../components/ScrollToTTop";
 
 function Client({
   handleLogout,
@@ -21,15 +22,23 @@ function Client({
       <div className="">
         <BrowserRouter basename="/landing_page">
           <LeadMagnetPopup />
+          <ScrollToTop />
           <Success />
           <Error />
           <Header />
           <Link to={"/contactUs"}>
             <button className="stickySideContactButton">Contact Us</button>
           </Link>
+          <a
+              className=""
+              style={{ textDecoration: "none", color: "black" }}
+               href="https://api.whatsapp.com/send/?phone=916379086118&amp;text=Hello! I visited your website.&amp;type=phone_number&amp;app_absent=0"
+               target="_blank" rel="noreferrer"
+            >
           <button className="whatsappStickySideButton">
             <BsWhatsapp />
           </button>
+          </a>
           <Routes>
             <Route path="/" element={<Home handleLogin={handleLogin} />} />
             <Route path="/contactUs" element={<ContactUs />} />
