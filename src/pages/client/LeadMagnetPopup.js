@@ -42,23 +42,22 @@ const LeadMagnetPopup = () => {
         >
           <Modal.Header closeButton>
             <Modal.Title className="leadMagnetHeading">
-              Let us help you.
+              Are you ready to tame Google
             </Modal.Title>
           </Modal.Header>
           <Modal.Body className="pt-0">
             <p className="mb-0 leadMagnetSubHeading">
-              Business dull? Need more orders?
+             We Google and Get New Customers and Orders
             </p>
             <p className="leadMagnetParagraph">
-              Traffic that you can convert into new customers, orders, improved
-              sales figures and profit.
+            Use our specially designed Ebook to get tips to win Google, get quality traffic and leads for free.
             </p>
             <div class="mb-3">
               <label
                 for="exampleFormControlInput1"
                 className="form-label leadMagenetLable"
               >
-                Email
+                Work Email
               </label>
               <input
                 type="email"
@@ -68,7 +67,7 @@ const LeadMagnetPopup = () => {
             </div>
             <p className="leadMagnetParagraph">
               By Submiting my personal data, I agree the Terms & Conditions of
-              ECS Cloud Infotech Pvt Ltd
+              ECS Cloud Infotech Pvt Ltd.
             </p>
             <Button
               variant="primary"
