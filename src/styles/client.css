@@ -26,26 +26,27 @@ body {
 .headerNavLink.navbar-nav .nav-link {
   color: #000;
 }
+
 .headerNavLink.navbar-nav .nav-link:hover {
   color: #fff8e9;
-  /* background-color: #1A4ED5; figma clr*/
   background-color: #2c6bff;
   border-radius: 5px;
 }
-.headerNavLink.navbar-nav a.nav-link.active {
+
+.headerNavLink.navbar-nav .nav-link.active {
   color: #fff8e9;
-  /* background-color: #1A4ED5; figma clr*/
-  border-radius: 5px;
   background-color: #2c6bff;
+  border-radius: 5px;
 }
+
 .navbar .btn-outline-success {
   color: #fff8e9;
-  /* background-color: #25D366;   FIGMA CLR */
   background-color: #00d570;
   border: none;
   padding: 10px 20px;
   border-radius: 1.2rem;
 }
+
 
 @media (max-width: 411px) {
   .navbar-toggler {
@@ -67,9 +68,27 @@ body {
   }
 }
 
-.contactNum:hover{
-color: #2c6bff;
+.contactNum a:hover{
+color: #2c6bff !important;
 }
+.video-container {
+  width: 80%;
+  height: 315px;
+  position: relative;
+}
+
+.cover-image {
+  object-fit: cover;
+}
+
+.iframe-video {
+  width: 100%;
+  height: 315px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* home */
 .responsive-text {
   width: 100%; /* Default width */
@@ -170,6 +189,28 @@ color: #2c6bff;
   font-weight: bold;
   color: #0061fe;
 }
+.liveTag {
+  margin-left: 5px; /* Adjust space between "One Click" and "& Live" */
+}
+@media (min-width: 1200px) {
+  .liveTag {
+    width: 75%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .liveTag {
+    width: 140%;
+  }
+}
+
+@media (max-width: 767px) {
+  .liveTag {
+    width: 100%;
+  }
+}
+
+
 
 @media (max-width: 450px) {
   .oneClick {
@@ -313,19 +354,21 @@ color: #2c6bff;
   }
 }
 
-/* Lead Magnet  */
+/* / Lead Magnet  / */
 
 .modelContent .modal-content {
-  border-radius: 0px !important;
+  border-radius: 5px !important;
 }
 
 .modelContent .modal-header {
   border-bottom: 0px !important;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
 }
 
 .leadMagnetHeading {
   color: #1e255e;
-  font-size: 34px;
+  font-size: 30px;
 }
 
 .leadMagnetSubHeading {
@@ -345,7 +388,7 @@ color: #2c6bff;
 }
 
 .leadMagenetInput {
-  border-radius: 0px;
+  border-radius: 5px;
   padding: 10px;
   border: 1px solid #1e255e;
   background-color: #0061fe0e;
@@ -353,9 +396,13 @@ color: #2c6bff;
 
 .leadMagnetButton {
   width: 100%;
-  border-radius: 0px;
+  border-radius: 5px;
   padding: 10px;
   background-color: #0061fe;
+}
+
+.modal-header .btn-close{
+  margin-bottom: 30px;
 }
 
 .successHeading {
@@ -372,13 +419,12 @@ color: #2c6bff;
 .errorMagnetButton {
   border-radius: 0px;
   padding: 10px 20px;
-  background-color: rgb(192, 0, 0);
   border-radius: 50px !important;
 }
 
 .errorHeading {
   color: #fff;
-  background-color: rgb(192, 0, 0);
+  background-color: rgb(255, 80, 80);
   border-radius: 0px;
 }
 
@@ -390,7 +436,7 @@ color: #2c6bff;
 .errorMagnetButton {
   border-radius: 0px;
   padding: 10px 20px;
-  background-color: rgb(192, 0, 0);
+  background-color: rgb(255, 80, 80);
   border-radius: 50px !important;
 }
 
