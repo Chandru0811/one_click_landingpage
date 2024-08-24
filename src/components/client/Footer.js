@@ -10,26 +10,10 @@ function Footer() {
     <section className="footerBg">
       <div className="container-fluid">
         <div className="row pt-5">
-          <div className="col-md-4 col-12 mb-4">
+
+          <div className="col-md-3 col-12 mb-4">
             <h2 className="fw-bold">ECS</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam ut id nisl tellus rhoncus, imperdiet.</p>
-            <div className="d-flex flex-wrap">
-              <span className="mediaIconBg">
-                <TbWorld />
-              </span>
-              <span className="mediaIconBg mx-3">
-                <FaFacebookF />
-              </span>
-              <span className="mediaIconBg">
-                <FaTwitter />
-              </span>
-              <span className="mediaIconBg mx-3">
-                <FaGoogle />
-              </span>
-              <span className="mediaIconBg">
-                <FaLinkedinIn />
-              </span>
-            </div>
           </div>
           <div className="col-md-4 col-8 col-lg-2 mb-3">
             <h5 className="mb-3 fw-bold">Our Services</h5>
@@ -38,7 +22,7 @@ function Footer() {
             <p>Social Media Marketing</p>
             <p>CRM</p>
           </div>
-          <div className="col-md-3 col-6 col-lg-2  mb-3">
+          <div className="col-md-4 col-6 col-lg-2  mb-3">
             <h5 className="mb-3 fw-bold">Pages</h5>
             <p>Contact Us</p>
             <p>Register</p>
@@ -59,12 +43,32 @@ function Footer() {
               <span className="mediaIconBg1 me-2"><FaLocationArrow /></span>
               <p className="mb-0">The Alexcier, 237 Alexandra Road, #04-10</p>
             </div>
+            <div className="d-flex flex-wrap mt-3">
+              <span className="mediaIconBg">
+                <TbWorld />
+              </span>
+              <span className="mediaIconBg mx-3">
+                <FaFacebookF />
+              </span>
+              <span className="mediaIconBg">
+                <FaTwitter />
+              </span>
+              <span className="mediaIconBg mx-3">
+                <FaGoogle />
+              </span>
+              <span className="mediaIconBg">
+                <FaLinkedinIn />
+              </span>
+            </div>
           </div>
+
           <hr className="mb-0" />
+
           <div className="footer-copyright py-2 d-flex flex-column flex-md-row align-items-center justify-content-center">
             <LiaCopyrightSolid />
             <p className="mb-0 ms-2">2024 | All Rights Reserved at <span className="footerText">ECS Cloud Infotech</span></p>
           </div>
+
         </div>
       </div>
     </section>
