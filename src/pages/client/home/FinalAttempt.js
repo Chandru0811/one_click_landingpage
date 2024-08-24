@@ -8,12 +8,15 @@ function FinalAttempt() {
       <div className="row py-3 ">
         <div className="col-12 d-flex justify-content-center align-items-center">
           <div className="text-center mt-5">
+            <h2 className="fw-fw-semibold" style={{ color: "#0f3287" }}>
+            Business dull? Need help?
+            </h2>
             <h2 className="fw-bold" style={{ color: "#0f3287" }}>
-              Let's start growing your business
+            Are you looking for a fresh start?
             </h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-              Diam ut id nisl tellus rhoncus, imperdiet
+            Don’t want to invest too much? Let us help you!, Get new customers, new orders, better sales figures. <br />
+            Zero hassles, zero technical knowledge required, 100% stress free, Use of Google & Social Media to succeed
             </p>
             <div className="d-flex justify-content-center gap-4 align-items-center mt-5">
               <button
@@ -24,7 +27,7 @@ function FinalAttempt() {
               </button>
               <button
                 type="submit"
-                className=" btn btn-outline-primary px-4 py-2 rounded-2"
+                className=" btn btn-outline-primary px-4 py-2 rounded-2 contactUs"
               >
                 Contact Us
               </button>

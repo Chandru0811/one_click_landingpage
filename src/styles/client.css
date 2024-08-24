@@ -140,6 +140,9 @@ body {
     width: 80px; /* Further adjust width for very small screens */
   }
 }
+.contactUs{
+  --bs-btn-hover-bg: #385fe5
+}
 /* Hero Section  */
 .heroBackground {
   background: url("../assets/singapore_map.svg");

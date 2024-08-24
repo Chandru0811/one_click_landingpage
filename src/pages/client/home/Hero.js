@@ -29,10 +29,14 @@ function Hero() {
             </h2>
 
             <ul className="heroList">
-              <li className="pt-4">
+              <li className="pt-4 pb-2">
                 All your Social Media posts live, in just one click.
               </li>
-              <li className="py-3">Save time, money and effort!</li>
+              <li className="pb-2">Save time, money and effort!</li>
+              <li className="pb-2">Zero hassle, one click and you are ready</li>
+              <li className="pb-2">Specially designed, home-grown tool</li>
+              <li className="pb-2">Designed to make life easier for small and medium business owners</li>
+              <li className="pb-2">Helps you achieve More Sales, More profit!</li>
             </ul>
             <button className="btn btn-primary primaryButton" >
               Get Started
