@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Home from "../pages/client/Home";
 import "../styles/client.css";
 import Header from "../components/client/Header";
@@ -24,7 +24,9 @@ function Client({
           <Success />
           <Error />
           <Header />
-          <button className="stickySideContactButton">Contact Us</button>
+          <Link to={"/contactUs"}>
+            <button className="stickySideContactButton">Contact Us</button>
+          </Link>
           <button className="whatsappStickySideButton">
             <BsWhatsapp />
           </button>

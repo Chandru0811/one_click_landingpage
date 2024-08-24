@@ -15,7 +15,7 @@ function Footer() {
             <h2 className="fw-bold">ECS</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam ut id nisl tellus rhoncus, imperdiet.</p>
           </div>
-          <div className="col-md-4 col-8 col-lg-2 mb-3">
+          <div className="col-md-4 col-8 col-lg-3 mb-3">
             <h5 className="mb-3 fw-bold">Our Services</h5>
             <p>One Click Social Media Posting</p>
             <p>SEO Services</p>
