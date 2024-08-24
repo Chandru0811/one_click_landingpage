@@ -17,7 +17,7 @@ const validationSchema = Yup.object({
     .email("*Invalid email format")
     .required("*Email is Required"),
   mobile: Yup.string().required("*Mobile Number is Required"),
-  message: Yup.string().required("*Message is Required"),
+  // message: Yup.string().required("*Message is Required"),
 });
 
 function SalePitch() {
@@ -46,16 +46,26 @@ function SalePitch() {
             style={{ right: 0, top: 0, maxWidth: "50%" }}
           />
           <h4 className="fw-bold mt-3" style={{ color: "#0f3287", zIndex: 1 }}>
-            Win Social Media in One <span className="fw-light">Click!</span>
+          SEO Services | Social Media Marketing | CRM
           </h4>
           <p
-            className="text-muted text-center mt-lg-5 mt-md-3 responsive-text"
+            className="text-muted text-center mt-md-3 responsive-text"
             style={{ zIndex: 1 }}
           >
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur{" "}
+            Everything you need under one umbrella, Take your business to the next level. 3D Company Profile that helps you win clients. 
+              Make use of Google and Social Media to grow your business. No stress, no technical knowledge required, we handle them all.
+              LinkedIn, Facebook, Instagram, YouTube, TikTok, X - we cover them all
           </p>
+          {/* <ul className="heroList ms-lg-5">
+              <li className="pt-4 pb-2">
+              Everything you need under one umbrella
+              </li>
+              <li className="pb-2">Take your business to the next level</li>
+              <li className="pb-2">3D Company Profile that helps you win clients</li>
+              <li className="pb-2">Make use of Google and Social Media to grow your business</li>
+              <li className="pb-2">No stress, no technical knowledge required, we handle them all</li>
+              <li className="pb-2">LinkedIn, Facebook, Instagram, YouTube, TikTok, X - we cover them all</li>
+            </ul> */}
         </div>
       </div>
       <div className="container">
@@ -187,18 +197,34 @@ function SalePitch() {
           <div className="col-12 col-md-6  d-flex align-items-center justify-content-center">
             <img src={ContainerImg1} alt="..." className="img-fluid" />
           </div>
-          <div className="col-12 col-md-6 col-lg-5 mt-md-3 mb-2 mb-lg-0 mb-md-0 d-flex justify-content-center align-items-center">
+          <div className="col-12 col-md-6 col-lg-6 mt-md-3 mb-2 mb-lg-0 mb-md-0 d-flex justify-content-center align-items-center">
             <div className="">
               <img src={key} alt="..." className="img-fluid mb-2" />
               <div>
-                <h5 style={{ color: "#006db7" }}>
-                  Save time, money and effort!
-                </h5>
-                <p className="text-muted">
+              <h1 className="mainHeading">
+              Make Google your friend!
+            </h1>
+                <h3 style={{ color: "#006db7" }} className="fw-semibold">
+                Double your profit, get new customers
+                </h3>
+                {/* <p className="text-muted">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                   Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                  natoque penatibus et magnis dis parturient montes, nascetur
-                </p>
+                  natoque
+                   penatibus et magnis dis parturient montes, nascetur
+                </p> */}
+                <ul className="heroList">
+              <li className=" pb-1">
+                All your Social Media posts live, in just one click.
+              </li>
+              <li className="pb-1">Through our Advanced SEO Services</li>
+              <li className="pb-1">More traffic, more sales, More profit</li>
+              <li className="pb-1">Use your business website as the front end
+              Let Google do the work for you</li>
+              <li className="pb-1">SEO = Search Engine Optimisation</li>
+              <li className="pb-1">Get the right people do it for you, talk to us today!</li>
+              <li className="pb-1">CTA </li>
+            </ul>
                 <button
                   type="submit"
                   className="sale-pitch-button btn btn-primary px-4 py-2 rounded-2"
@@ -223,14 +249,27 @@ function SalePitch() {
               </div>
               <img src={clock} alt="..." className="img-fluid mb-2" />
               <div>
-                <h5 style={{ color: "#006db7" }}>
-                  All your Social Media posts live, in just one click.
-                </h5>
-                <p className="text-muted">
+              <h1 className="mainHeading">
+              There are 5 billion + social media users worldwide
+            </h1>
+            <h3 style={{ color: "#006db7" }} className="fw-semibold">
+                Are you missing out on such a potential source of customers?
+                </h3>
+                {/* <p className="text-muted">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                   Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                   natoque penatibus et magnis dis parturient montes, nascetur
-                </p>
+                </p> */}
+                <ul className="heroList">
+              <li className=" pb-1">
+              Take social media seriously
+              </li>
+              <li className="pb-1">Act today! Get more customers and orders for free</li>
+              <li className="pb-1">Tap into the power of social media</li>
+              <li className="pb-1">Get the best people work on it for you</li>
+              <li className="pb-1">Talk to us today!</li>
+              <li className="pb-1">CTA </li>
+            </ul>
                 <button
                   type="submit"
                   className="sale-pitch-button btn btn-primary px-4 py-2 rounded-2"
@@ -252,14 +291,27 @@ function SalePitch() {
             <div className="">
               <img src={Monitor} alt="..." className="img-fluid mb-2" />
               <div>
-                <h5 style={{ color: "#006db7" }}>
-                  Zero hassle, one click and you are ready{" "}
-                </h5>
-                <p className="text-muted">
+              <h1 className="mainHeading">
+              Social Media campaigns are tough
+            </h1>
+            <h3 style={{ color: "#006db7" }} className="fw-semibold">
+                They give a lot of data, some useful, some not
+                </h3>
+                {/* <p className="text-muted">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                   Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                   natoque penatibus et magnis dis parturient montes, nascetur
-                </p>
+                </p> */}
+                <ul className="heroList">
+              <li className=" pb-1">
+              Let us our All in One CRM simplify it for you
+              </li>
+              <li className="pb-1">Our CRM centralises data, analyses it and gives you data that you can use</li>
+              <li className="pb-1">Data that can be used to make sales closures</li>
+              <li className="pb-1">Make life easier, try our All in One CRM today!</li>
+              {/* <li className="pb-1">Talk to us today!</li> */}
+              <li className="pb-1">CTA </li>
+            </ul>
                 <button
                   type="submit"
                   className="sale-pitch-button btn btn-primary px-4 py-2 rounded-2"
