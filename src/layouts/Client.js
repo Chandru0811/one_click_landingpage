@@ -8,7 +8,7 @@ import LeadMagnetPopup from "../pages/client/LeadMagnetPopup";
 import Success from "../pages/client/Success";
 import Error from "../pages/client/Error";
 import { BsWhatsapp } from "react-icons/bs";
-
+import ContactUs from "../pages/client/ContactUs";
 
 function Client({
   handleLogout,
@@ -18,18 +18,19 @@ function Client({
 }) {
   return (
     <div>
-      <div>
+      <div className="">
         <BrowserRouter basename="/landing_page">
           <LeadMagnetPopup />
           <Success />
           <Error />
           <Header />
-          <button className="stickySideButton">Contact Us</button>
+          <button className="stickySideContactButton">Contact Us</button>
           <button className="whatsappStickySideButton">
             <BsWhatsapp />
           </button>
           <Routes>
             <Route path="/" element={<Home handleLogin={handleLogin} />} />
+            <Route path="/contactUs" element={<ContactUs />} />
           </Routes>
           <Footer />
         </BrowserRouter>

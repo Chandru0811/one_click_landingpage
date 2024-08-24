@@ -15,10 +15,10 @@ function Header() {
       <Navbar
         key={expand}
         expand={expand}
-        className="shadow  position-sticky"
+        className="shadow position-sticky"
         style={{
           top: "0",
-          zIndex: "9999",
+          zIndex: isOffcanvasOpen?"999":"9999",
           backgroundColor: "rgba(255, 255, 255, 0.5)",
           backdropFilter: "blur(10px)",
         }}
@@ -29,7 +29,7 @@ function Header() {
           </Navbar.Brand>
 
           <div className="d-flex align-items-center ms-auto order-2 order-md-3 ">
-            <Button variant="outline-success " className="">
+            <Button variant="outline-success " className="text-nowrap">
               Call Us
             </Button>
             <Navbar.Toggle
@@ -42,7 +42,6 @@ function Header() {
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-${expand}`}
             aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-            placement="end"
             className=" order-3 order-md-2"
             show={isOffcanvasOpen}
             onHide={() => setIsOffcanvasOpen(false)}
@@ -61,29 +60,29 @@ function Header() {
                 <Nav.Link
                   as={NavLink}
                   to={"/"}
-                  className={isOffcanvasOpen ? "ps-2 mb-1" : ""}
+                  className={`${isOffcanvasOpen ? "ps-2 mb-1" : "text-nowrap"}`}
                 >
                   One Click Social Media Posting
                 </Nav.Link>
                 <Nav.Link
                   // href="#action2"
-                  className={`${isOffcanvasOpen ? "ps-2 mb-1" : ""}`}
+                  className={`${isOffcanvasOpen ? "ps-2 mb-1" : "text-nowrap"}`}
                 >
                   SEO Services
                 </Nav.Link>
                 <Nav.Link
                   // href="#action3"
-                  className={isOffcanvasOpen ? "ps-2 mb-1" : ""}
+                  className={isOffcanvasOpen ? "ps-2 mb-1" : "text-nowrap"}
                 >
                   Social Media Marketing
                 </Nav.Link>
                 <Nav.Link
                   // href="#action4"
-                  className={isOffcanvasOpen ? "ps-2 mb-1" : ""}
+                  className={isOffcanvasOpen ? "ps-2 mb-1" : "text-nowrap"}
                 >
                   CRM
                 </Nav.Link>
-                {isOffcanvasOpen ? "" : <Nav.Link className="flex-grow-1 text-end">+65 889 1306</Nav.Link>}
+                {isOffcanvasOpen ? "" : <div className="ms-auto mt-2 text-end text-nowrap contactNum cursor"><span className="">+65 889 1306</span></div>}
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

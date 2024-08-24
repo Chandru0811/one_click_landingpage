@@ -18,6 +18,9 @@
 body {
   background-color: #f5f7fa;
 }
+.cursor{
+  cursor: pointer;
+}
 
 /* header  */
 .headerNavLink.navbar-nav .nav-link {
@@ -64,6 +67,9 @@ body {
   }
 }
 
+.contactNum:hover{
+color: #2c6bff;
+}
 /* home */
 .responsive-text {
   width: 100%; /* Default width */
@@ -165,6 +171,22 @@ body {
   color: #0061fe;
 }
 
+@media (max-width: 450px) {
+  .oneClick {
+    font-size: 60px;
+  }
+}
+@media (max-width: 350px) {
+  .oneClick {
+    font-size: 55px;
+  }
+}
+
+.imageText img {
+  margin-left: 10px; /* Adjust as needed for spacing */
+}
+
+
 .imageText {
   font-size: 12px !important;
   color: #000;
@@ -174,6 +196,17 @@ body {
   font-size: 48px;
   font-weight: bold;
   color: #1e255e;
+}
+
+@media (max-width: 400px) {
+  .subHeadingHero {
+    font-size: 40px;
+  }
+}
+@media (max-width: 350px) {
+  .subHeadingHero {
+    font-size: 35px;
+  }
 }
 
 .heroList {
@@ -372,43 +405,43 @@ body {
   background-position: bottom left;
 }
 
-.stickySideButton {
-  position: fixed;
-  right: calc(25px); 
-  top: 55%;
-  transform: translateY(-50%) rotate(90deg);
-  transform-origin: right center;
-  padding: 13px 20px;
-  background-color: #FF7F2A; 
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  z-index: 1000; 
-}
+  .stickySideContactButton {
+    position: fixed;
+    right: calc(25px); 
+    top: 55%;
+    transform: translateY(-50%) rotate(90deg);
+    transform-origin: right center;
+    padding: 13px 20px;
+    background-color: #FF7F2A; 
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 1000; 
+  }
 
-.stickySideButton:hover{
-    background-color: #e65c01;
-}
+  .stickySideContactButton:hover{
+      background-color: #ff7214;
+  }
 
-.whatsappStickySideButton {
-  position: fixed;
-  right: 0; 
-  top: 60%;
-  background-color: #25D366;
-  color: white;
-  border: none;
-  border-radius: 50%; 
-  width: 50px; 
-  height: 50px; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 22px;
-  z-index: 1001; 
-}
+  .whatsappStickySideButton {
+    position: fixed;
+    right: 0; 
+    top: 60%;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 22px;
+    z-index: 1001; 
+  }
 
-.whatsappStickySideButton:hover{
-    background-color: #00b141;
-}
+  .whatsappStickySideButton:hover{
+      background-color: #00b141;
+  }
