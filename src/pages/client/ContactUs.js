@@ -26,28 +26,28 @@ function ContactUs() {
     validationSchema: validationSchema,
     onSubmit: async (data) => {
       console.log("One lcik Lead Data:", data);
-      //   setIsSubmitting(true);
-    //   try {
-    //     const response = await axios.post(
-    //       `https://crmlah.com/ecscrm/api/newClient`,
-    //       data,
-    //       {
-    //         headers: {
-    //           "Content-Type": "application/json",
-    //         },
-    //       }
-    //     );
-    //     if (response.status === 201) {
-    //       toast.success("Message Successfully");
-    //     } else {
-    //       toast.error(response.data.message);
-    //     }
-    //   } catch (error) {
-    //     toast.success("Lead Created Successfully");
-    //   }
-      // finally {
-      //     setIsSubmitting(false); // Re-enable button after submission
-      //   }
+        setIsSubmitting(true);
+      try {
+        const response = await axios.post(
+          `https://crmlah.com/ecscrm/api/newClient`,
+          data,
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+        if (response.status === 201) {
+          toast.success("Message Send Successfully");
+        } else {
+          toast.error("Message Not Send");
+        }
+      } catch (error) {
+        toast.success("Message Not Send");
+      }
+      finally {
+          setIsSubmitting(false); // Re-enable button after submission
+        }
     },
   });
   return (
